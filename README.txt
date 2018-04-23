@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/jalbert7/pen/XMLKRK.
-
+A landing page built with html and css for the blue mountains. Project currently still in progress.
  
