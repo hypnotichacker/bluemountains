@@ -1,0 +1,334 @@
+/*Web Fonts--------------*/
+
+@font-face {
+	font-family: 'Abolition Regular';
+	  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+h1
+	{
+	font-family: 'Abolition Regular';
+}
+
+h2	{
+	
+}
+
+/*Setting body elements margin property to 0 got rid of white space around header. */
+
+/*Type Selectors	*/
+
+*	{
+	box-sizing: border-box;
+}
+
+body		{
+	color: #878787;
+	margin: 0;
+	font-size: 1em;
+	font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+	line-height: 1.5;
+	font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, san-serif; /*This is the shorthand version of the above CSS font rules. I have left it here for educational purposes  */
+}
+
+/*text shadow in h1 code is an awesome drop shadow.
+The code below in text-shadow is from markdotto.com/playground/3d-text and creates a 3d text effect. */
+
+h1	{
+	font-size: 5.625rem; /* 90px / 16px (default text size) =em value */
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1.3;
+	  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+			   margin: 12px 0 0;
+}
+
+h2	{
+	font-family: 'Oswald', sans-serif;
+	font-size: 53px;
+	text-decoration: 
+	font-weight: normal;
+	line-height: 1.1;
+	margin-bottom: .5em;  /*26/53 (Wanted margin at 26px, so we divided 26 by the h2 font value as margin inherits font size*/
+	
+}
+
+h3	{
+	font-size: 20px;
+	color: #48525c;
+	line-height: 1.2;
+	margin-bottom: 1.7em; /*34px/20px */
+}
+
+img	{
+	max-width: 100%; /*This made images fluid and responsive to browser window resizes and centred the images! This also seemed to make all images equal in size and alignment. */
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+	}
+
+/*
+li	{
+display: inline-block; /* need to chage this to inline-block in order for margin property to work. 
+padding: 0 12px;
+border-right: solid 1px; lines seperating horizontal list items. Very nice presentation eg: list of resorts 
+margin: 80px 0;
+}
+
+
+/*ID Selectors */
+
+#main-footer	{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: solid 10px #3366ff;
+	text-align: center;
+}
+
+/*Class Selectors */
+
+.main-header	{
+	background-color: #3366ff; /*This makes our header background orange */
+	text-align: center;
+	height: 850px;
+	padding-top: 170px;
+	
+	background:
+	linear-gradient(#3366ff, transparent	 90%),
+	linear-gradient(0deg, #fff, transparent),
+	#ffa949 url('https://www.accommodated.com.au/sites/nacc/files/paragraphs/images/two-column/left/3-sisters-rocks.jpg');
+	
+	background-size: cover; /*shows full image while maintaining height & width proportions */
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+/*Below code is for journey through blue mountains title */
+.title		{
+	color: white;
+	font-size: 1.625rem; /*	26px/16px	*/
+	letter-spacing: 0.20em;
+	font-weight: 200;
+	border-bottom: 2px solid;
+	padding-bottom: 10px;
+}
+
+.callout	{
+	font-size: 1.25em;
+	border-bottom: 3px solid;
+	padding: 0 9px 3px;
+	margin-top: 20px;
+	display: inline-block;
+	
+}
+
+/*Layout Styles*/
+
+.primary-content, .secondary-content
+	{
+	width: 75%; /*Had to set max width to 900px when making this width a percentage to prevent div from becoming to big on larger screens which is what happened*/
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: auto; /*makes all margins equal */
+	max-width: 900px; /*max width was necessary when making width above a percentage to prevent div getting to large on large screens */
+
+}
+
+/*Bring appropriate items image */
+
+.wildlife	{
+	color: white;
+	background-color: #434a52;
+	padding: 8% 10%;
+	border-top: 10px solid #3366ff;
+	margin: 150px 0 60px;
+	background: url('https://a-z-animals.com/media/animals/images/470x370/koala7.jpg');
+	box-shadow: 10px 10px 15px #191919;
+	border-radius: 10px;
+  
+}
+
+/*changing margin top to 150px moved it down from the heading */
+.arrow	{
+	width: 50px;
+	margin-top: 150px;
+}
+
+/*Floated Columns	*/
+
+.resorts, .tips 
+{
+	width: 46.5%;
+	vertical-align:text-top;
+}
+
+.tips 	{
+	float: right;
+}
+
+.resorts	{
+	float: left;
+}
+
+.primary-content	{
+	text-align: center;
+}
+
+.t-border	{
+	border-top: 2px solid lightgrey;
+	margin-top: 135px;
+}
+
+
+
+/*List Style Types by adding 0 to padding in lists you remove the default space to the side of the list. List style position stops bullet points sticking out if you set it to inside*/
+
+
+ul, ol {
+	list-style-position: inside;
+	list-style-type: square;
+	padding-left: 0;
+	margin-left: 0; /*older versions of IE use the margin property as opposed to the padding property to stop lists auto indenting */
+	margin: 30px 0;
+}
+
+/*increases vertical gaps between list items in lists */
+li	{
+	margin-bottom: 10px;
+}
+	
+a:link	{
+	color:  #3366ff;
+	text-decoration: none;
+}
+
+a:visited	{
+	color: lightblue;
+}
+
+a:hover	{
+	color: forestgreen;
+}
+
+a:active	{
+	color: rgba(255, 260, 73, .4);
+}
+
+a:focus	{
+	color: white;
+	background-color: orange;
+}
+
+/*float clearfix--- Below code clears floats of sections that have the class group
+The clear: both declaration clears any collapsed space caused by floats on both sides of container*/
+
+.group:after	{
+	content: " ";
+	display: table;
+	clear:both;
+}
+
+
+/*Media Queries */
+
+/*media query examples 
+
+/*@media  (max-width: 960px)	{
+	body		{
+		background: royalblue;
+	}
+}
+
+@media (max-width: 480px)	{
+	body		{
+		background: darkred;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+	body {
+		background: seagreen;
+	}
+}
+
+--Below are media query breakpoints that adjust layout for smaller devices and viewport sizes. Currently parts of layout are breaking at certain points.
+When content is 1024px or less in width it takes up 90% of the screen as opposed to 75%, this stops content from squashing up.
+Below media query targets primary and secondary content divs and makes them wider when under 1024px
+*/
+
+@media (max-width: 1024px)	{
+	.primary-content,
+	.secondary-content	{
+		width: 90%;
+	}
+	/*increased padding stops wildlife box from being too cramped */
+	.wildlife		{
+		padding: 10% 12%;
+		margin: 50px 0 20px;
+	}
+	
+}
+
+/*Below im increasing width to 100% as the screen gets smaller to ensure content is not squashed on smaller screen sizes. */
+
+@media ( max-width: 768px)	{
+	.primary-content,
+	.secondary-content	{
+		width: 100%;
+		padding: 20px;
+		border-top: none;
+	}
+		/*making header smaller on smaller screens */
+		.main-header	{
+			max-height: 380px;
+			padding: 50px 25px 0;
+		}
+  
+		.title	{
+			font-size: 1.3rem;
+			border: none;
+		}
+		h1, h2	{
+			font-size: 1.5rem;
+			line-height: 1.1;
+		}
+		.intro	{
+			font-size: 1rem;
+		}
+		
+		/*Stacking columns on smaller screens by erasing the floats which gets rid of columns */
+		.resorts,
+		.tips	{
+			float: none;
+			width: 100%;
+			
+		}
+		.main-footer	{
+			padding: 20px 0;
+		}
+  .resorts img {
+    width:270px;
+    height: 190px;
+  }
+		
+	}
+	
+
+
+
